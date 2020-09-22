@@ -11,10 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+   @import url(<link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap' rel="stylesheet">);
+
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  color: #eee;
+  overflow-x: hidden;
 }
 
 /*
@@ -86,7 +87,49 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  font-size: 1em;
+  line-height: 1.4;
+  overflow-x: hidden;
+  margin: auto;
+  font-family: "Montserrat" , sans-serif;
+  min-width: fit-content;
 
+}
+
+
+nav{
+  width: 100vw;
+  background-color: #000000;
+  min-height: 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li{
+  margin: 35px 15px 0 15px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: #25B9F5;
+  text-decoration: underline;
+}
    nav{
     width: 100w;
     background-color: #000000;
@@ -94,6 +137,53 @@ textarea {
     color: #ffffff;
     }
 
+/* End Now Style */
+
+.Hero{
+  width: 100vw;
+  background-color: #e2e2e2;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/download.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    section{
+      background-color: #f2f2f2;
+      color: #000000;
+      display: flex;
+      margin: 0;
+
+    }
+
+    .hero_header h1{
+      font-size: 50px;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+    }
+
+.four_columns{
+  width: 100vw;
+  diplay: flex;
+  justify-content: center;
+}
+
+.news_post{
+  max-width: 20%;
+  font-weight: 500;
+  background-color: #e3e3e3;
+  padding: 15px;
+  margin: 5px;
+}
+
+#AFI{
+  background-color: blue;
+  color: #ffffff;
+}
 
    section{
      background-color: #f2f2f2;
